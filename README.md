@@ -9,3 +9,6 @@
    videoportal : Channels 41
    
    = Total 175 Channels
+
+* xml addr
+  https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
