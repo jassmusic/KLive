@@ -1,0 +1,223 @@
+tvg-id, group-title, tvg-name, Source
+wavve|K01, WAVVE, KBS 1TV, 지상파
+wavve|K02, WAVVE, KBS 2TV, 지상파
+wavve|M01, WAVVE, MBC, 지상파
+wavve|S01, WAVVE, SBS, 지상파
+wavve|E01, WAVVE, EBS 1, 지상파
+wavve|E07, WAVVE, EBS 2, 지상파
+wavve|E18, WAVVE, 자이언트 펭TV, 어린이
+wavve|C2401, WAVVE, MBN, 종합편성
+wavve|C2601, WAVVE, TV CHOSUN, 종합편성
+wavve|C2501, WAVVE, 채널A, 종합편성
+wavve|Y01, WAVVE, 연합뉴스TV, 뉴스
+wavve|C2101, WAVVE, YTN, 뉴스
+wavve|K12, WAVVE, CCTV4, 해외
+wavve|K25, WAVVE, CGTN, 해외
+wavve|C4201, WAVVE, GS SHOP, 쇼핑
+wavve|C4101, WAVVE, 현대홈쇼핑, 쇼핑
+wavve|C8301, WAVVE, NS홈쇼핑, 쇼핑
+wavve|C5601, WAVVE, 롯데홈쇼핑, 쇼핑
+wavve|C4202, WAVVE, GS MY SHOP, 쇼핑
+wavve|C4102, WAVVE, 현대홈쇼핑+샵, 쇼핑
+wavve|C8302, WAVVE, NS SHOP+, 쇼핑
+wavve|C4901, WAVVE, 쇼핑엔티, 쇼핑
+wavve|C4801, WAVVE, 신세계TV쇼핑, 쇼핑
+wavve|C5602, WAVVE, 롯데홈쇼핑 ONETV, 쇼핑
+wavve|K15, WAVVE, KBS 1박 2일, wavve정주행
+wavve|K118, WAVVE, 우리 동네 예체능, wavve정주행
+wavve|K124, WAVVE, 슈퍼맨이 돌아왔다, wavve정주행
+wavve|K127, WAVVE, 뮤직뱅크 클래식, wavve정주행
+wavve|K26, WAVVE, KBS JOY 연애의 참견, wavve정주행
+wavve|K06, WAVVE, KBS DRAMA, 드라마
+wavve|K04, WAVVE, KBS JOY, 예능
+wavve|K05, WAVVE, KBSN Life, 교양
+wavve|K09, WAVVE, KBS W, 여성
+wavve|K23, WAVVE, KBSN PLUS, 예능
+wavve|PM1, WAVVE, MBC 무한도전, wavve정주행
+wavve|PM2, WAVVE, MBC 나 혼자 산다, wavve정주행
+wavve|M12, WAVVE, MBC 라디오스타, wavve정주행
+wavve|M13, WAVVE, MBC 서프라이즈, wavve정주행
+wavve|M06, WAVVE, MBC M, 음악
+wavve|M02, WAVVE, MBC Drama, 드라마
+wavve|M03, WAVVE, MBC Every1, 예능
+wavve|M14, WAVVE, MBC ON, 예능
+wavve|M10, WAVVE, ALL THE K-POP, 음악
+wavve|M15, WAVVE, MBC 하이킥24 LIVE, wavve정주행
+wavve|M16, WAVVE, MBC 드라마정주행24 LIVE, wavve정주행
+wavve|M17, WAVVE, MBC 예능정주행24 LIVE, wavve정주행
+wavve|S04, WAVVE, SBS funE, 예능
+wavve|S03, WAVVE, SBS Plus, 드라마
+wavve|S15, WAVVE, TV동물농장, wavve정주행
+wavve|S16, WAVVE, 런닝맨, wavve정주행
+wavve|S18, WAVVE, 레전드 시트콤, wavve정주행
+wavve|S17, WAVVE, 미우새, wavve정주행
+wavve|S19, WAVVE, 순옥 명작관, wavve정주행
+wavve|S20, WAVVE, 스브스 갓드, wavve정주행
+wavve|C2402, WAVVE, MBN 플러스, 예능
+wavve|C2502, WAVVE, 채널A 플러스, 예능
+wavve|C5202, WAVVE, iHQ 맛있는녀석들, wavve정주행
+wavve|C7301, WAVVE, 동아TV, 여성
+wavve|C6901, WAVVE, 폴라리스TV, 취미
+wavve|C5901, WAVVE, HISTORY, 교양
+wavve|C5902, WAVVE, LIFETIME, 여성
+wavve|C8001, WAVVE, KOK TV, wavve정주행
+wavve|X01, WAVVE, EDGETV, 드라마
+wavve|X02, WAVVE, FUNTV, 교양
+wavve|C8701, WAVVE, 텔레노벨라, 해외드라마
+wavve|C5501, WAVVE, 채널J, 해외드라마
+wavve|C5101, WAVVE, AsiaN, 해외드라마
+wavve|C8401, WAVVE, 채널차이나, 해외드라마
+wavve|C3901, WAVVE, 채널W, 해외드라마
+wavve|C8101, WAVVE, WeLike, 해외드라마
+wavve|C7801, WAVVE, 블렌딩 뮤직비디오, 음악
+wavve|H02, WAVVE, PLAYY 프리미엄 영화, 영화
+wavve|H01, WAVVE, PLAYY 웰메이드 영화, 영화
+wavve|H07, WAVVE, PLAYY 액션영화, 영화
+wavve|C4401, WAVVE, ANIBOX, 어린이
+wavve|C4402, WAVVE, ANIONE, 어린이
+wavve|A01, WAVVE, ANIMAX, 어린이
+wavve|D01, WAVVE, Disney, 어린이
+wavve|E05, WAVVE, EBS 키즈, 어린이
+wavve|D02, WAVVE, Disney Junior, 어린이
+wavve|C6802, WAVVE, 브라보키즈, 어린이
+wavve|F1301, WAVVE, 대교어린이TV, 어린이
+wavve|F0501, WAVVE, BTN불교TV, 종교
+wavve|F0601, WAVVE, CTS기독교TV, 종교
+wavve|F0701, WAVVE, 가톨릭평화방송, 종교
+wavve|K07, WAVVE, KBS1RADIO, 라디오
+wavve|K08, WAVVE, KBSCOOLFM, 라디오
+wavve|M08, WAVVE, MBC FM4U, 라디오
+wavve|M07, WAVVE, MBC 표준 FM, 라디오
+wavve|S07, WAVVE, SBS 파워FM, 라디오
+wavve|S08, WAVVE, SBS 러브FM, 라디오
+wavve|E06, WAVVE, EBS FM, 라디오
+wavve|C4501, WAVVE, TBS FM LIVE, 라디오
+wavve|C2107, WAVVE, YTN 라디오, 라디오
+wavve|C2701, WAVVE, KISS - 최신인기가요, 라디오
+wavve|C2702, WAVVE, KISS - 당신을 위한 발라드, 라디오
+wavve|C2703, WAVVE, KISS - 8090인기가요, 라디오
+wavve|C2704, WAVVE, KISS - K-POP 아이돌, 라디오
+wavve|C2705, WAVVE, KISS - 2000년대 인기가요, 라디오
+wavve|C2706, WAVVE, KISS - 재즈 라운지, 라디오
+wavve|C2707, WAVVE, KISS - Dog & Mom, 라디오
+wavve|C2708, WAVVE, KISS - 명품 클래식, 라디오
+wavve|C2709, WAVVE, KISS - 한국인이 사랑한 팝송, 라디오
+wavve|C2710, WAVVE, KISS - 트로트 아리랑, 라디오
+tving|C00544, TVING, 중화TV, 해외드라마
+tving|C00551, TVING, tvN, 예능
+tving|C00575, TVING, Olive, 여성
+tving|C00579, TVING, Mnet, 음악
+tving|C00585, TVING, TV CHOSUN 2, 예능
+tving|C00588, TVING, JTBC Golf, 스포츠
+tving|C00590, TVING, OGN, 스포츠
+tving|C00593, TVING, YTN, 뉴스
+tving|C00611, TVING, LIFETIME, 여성
+tving|C00708, TVING, MBN, 종합편성
+tving|C00805, TVING, JTBC GOLF&SPORTS, 스포츠
+tving|C01141, TVING, XtvN, 예능
+tving|C01142, TVING, ONSTYLE, 여성
+tving|C01143, TVING, O tvN, 예능
+tving|C01581, TVING, TV CHOSUN, 종합편성
+tving|C01582, TVING, JTBC, 종합편성
+tving|C01583, TVING, 채널A, 종합편성
+tving|C01723, TVING, 연합뉴스TV, 뉴스
+tving|C06941, TVING, 투니버스, 어린이
+tving|C07381, TVING, OCN, 영화
+tving|C15152, TVING, CH.DIA, 예능
+tving|C15347, TVING, YTN사이언스, 교양
+tving|C15741, TVING, JTBC2, 예능
+tving|C15846, TVING, SBS CNBC, 예능
+tving|C17141, TVING, 채널A플러스, 예능
+tving|C17142, TVING, MBN Plus, 예능
+tving|C17341, TVING, 히스토리, 교양
+tving|C22041, TVING, JTBC4, 예능
+tving|C43241, TVING, Nickelodeon, 어린이
+tving|C43242, TVING, SBS MTV, 음악
+tving|C43341, TVING, SBS F!L, 음악
+tving|C43342, TVING, THE K-POP, 음악
+1, EVERYON, CMC가족오락TV, 예능
+1016, EVERYON, 채널차이나, 해외드라마
+1065, EVERYON, 리얼TV, 교양
+1094, EVERYON, 헬스메디tv, 정보
+1186, EVERYON, 실버아이TV, 교양
+1197, EVERYON, 인도어 스포츠 채널, 스포츠
+1298, EVERYON, Baby TV, 어린이
+13, EVERYON, 리빙TV, 취미
+1301, EVERYON, eduTV, 교육
+1371, EVERYON, 대한생활체육TV, 스포츠
+1384, EVERYON, FUN TV, 교양
+1396, EVERYON, 한국선거방송, 공공
+193, EVERYON, YTN life, 교양
+2, EVERYON, ETN연예, 예능
+207, EVERYON, K-바둑, 취미
+22, EVERYON, 서울경제TV, 경제
+23, EVERYON, 이데일리TV, 경제
+26, EVERYON, 한국경제TV, 경제
+263, EVERYON, 아이넷TV, 음악
+28, EVERYON, CTS기독교TV, 종교
+30, EVERYON, ONT, 취미
+31, EVERYON, 국방TV, 공공
+319, EVERYON, 텔레노벨라, 해외드라마
+33, EVERYON, 법률방송, 공공
+335, EVERYON, C channel, 종교
+337, EVERYON, 마운틴TV, 취미
+34, EVERYON, BTN불교TV, 종교
+35, EVERYON, 예술 TV아르떼, 음악
+36, EVERYON, 아리랑TV, 교양
+38, EVERYON, 한문화 중심채널 STB상생방송, 종교
+385, EVERYON, 팍스경제TV, 경제
+389, EVERYON, 이벤트TV, 음악
+393, EVERYON, KTV, 공공
+4, EVERYON, TRENDY, 여성
+40, EVERYON, tbsTV, 정보
+401, EVERYON, 국회방송, 공공
+42, EVERYON, 육아방송, 여성
+43, EVERYON, 동아TV, 여성
+44, EVERYON, GTV, 여성
+46, EVERYON, 복지TV, 공공
+553, EVERYON, BBS 불교방송, 종교
+563, EVERYON, 매일경제TV, 경제
+7, EVERYON, 채널 Ching, 해외드라마
+77, EVERYON, 소비자TV, 정보
+8, EVERYON, THE MOVIE, 영화
+172, VIDEOPORTAL, EBS PLUS1, 교육
+173, VIDEOPORTAL, EBS PLUS2, 교육
+174, VIDEOPORTAL, CNBC, 해외
+175, VIDEOPORTAL, 플레이런TV, 교육
+381, VIDEOPORTAL, SBS스포츠, 스포츠
+383, VIDEOPORTAL, SPOTV2, 스포츠
+596, VIDEOPORTAL, OBS, 지상파
+614, VIDEOPORTAL, SBS GOLF, 스포츠
+625, VIDEOPORTAL, FISHING TV, 취미
+628, VIDEOPORTAL, 미드나잇, 성인
+629, VIDEOPORTAL, 플레이보이TV, 성인
+648, VIDEOPORTAL, OBS W, 예능
+649, VIDEOPORTAL, 홈&쇼핑, 쇼핑
+650, VIDEOPORTAL, 스포티비 골프 앤 헬스, 스포츠
+662, VIDEOPORTAL, K STAR, 예능
+665, VIDEOPORTAL, FTV, 취미
+667, VIDEOPORTAL, SPOTV, 스포츠
+668, VIDEOPORTAL, 빌리어즈티비, 스포츠
+672, VIDEOPORTAL, CJ오쇼핑, 쇼핑
+673, VIDEOPORTAL, NS홈쇼핑, 쇼핑
+674, VIDEOPORTAL, 롯데홈쇼핑, 쇼핑
+675, VIDEOPORTAL, 현대홈쇼핑, 쇼핑
+676, VIDEOPORTAL, GS SHOP, 쇼핑
+683, VIDEOPORTAL, 바둑TV, 취미
+688, VIDEOPORTAL, GMTV, 음악
+699, VIDEOPORTAL, 애니플러스, 어린이
+703, VIDEOPORTAL, ANIMAX, 어린이
+707, VIDEOPORTAL, 브레인TV, 취미
+726, VIDEOPORTAL, 폴라리스TV, 취미
+727, VIDEOPORTAL, STATV, 예능
+728, VIDEOPORTAL, bravo kids, 어린이
+729, VIDEOPORTAL, CNN International, 해외
+740, VIDEOPORTAL, GS MY SHOP, 쇼핑
+743, VIDEOPORTAL, 허니TV, 성인
+760, VIDEOPORTAL, 현대홈쇼핑+샵, 쇼핑
+761, VIDEOPORTAL, 대교 어린이TV, 어린이
+768, VIDEOPORTAL, EBS English, 교육
+771, VIDEOPORTAL, 토마토TV, 경제
+793, VIDEOPORTAL, JEI EnglishTV, 교육
+794, VIDEOPORTAL, 가요TV, 음악
+813, VIDEOPORTAL, W 쇼핑, 쇼핑
