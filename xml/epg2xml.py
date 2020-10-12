@@ -8,6 +8,7 @@ import json
 import socket
 import logging
 import argparse
+from itertools import islice
 from functools import partial
 from urllib.parse import unquote
 from logging.handlers import RotatingFileHandler
@@ -17,7 +18,7 @@ from xml.sax.saxutils import escape as _escape, unescape
 #
 # default variables
 #
-__version__ = '1.4.3'
+__version__ = '1.5.0'
 today = date.today()
 ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
 req_timeout = 15
@@ -36,7 +37,7 @@ parser.add_argument('--config', dest='configfile', default=configfile, help='설
 parser.add_argument('--logfile', default=logfile, help='로그 파일 경로 (기본값: %s)' % logfile)
 parser.add_argument('--loglevel', choices=['DEBUG', 'INFO', 'WARNING', 'ERROR'], default='INFO', help='로그 레벨 (기본값: INFO)')
 parser.add_argument('--channelfile', default=channelfile, help='채널 파일 경로 (기본값: %s)' % channelfile)
-parser.add_argument('-i', '--isp', dest='MyISP', choices=['ALL', 'KT', 'LG', 'SK'], help='사용하는 ISP 선택')
+parser.add_argument('-i', '--isp', dest='MyISP', choices=['ALL', 'KT', 'LG', 'SK', 'SKB'], help='사용하는 ISP 선택')
 parser.add_argument('-c', '--channelid', dest='MyChannels', metavar='CHANNELID', help='채널 ID를 ,와 -, *를 적절히 조합하여 지정 (예: -3,5,7-9,11-)')
 arg1 = parser.add_mutually_exclusive_group()
 arg1.add_argument('-d', '--display', dest='output', action='store_const', const='d', help='생성된 EPG를 화면에 출력')
@@ -260,19 +261,23 @@ def GetEPGFromSK(ChannelInfos):
     else:
         return
 
-    url = 'http://mapp.btvplus.co.kr/sideMenu/live/IFGetData.do'
-    referer = 'http://mapp.btvplus.co.kr/channelFavor.do'
-    icon_url = 'http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_{}.png'
+    for ChannelInfo in ChannelInfos:
+        log.warning('SK 서비스 중지! 다른 소스로 변경해서 사용하세요: %s' % ChannelInfo)
+
+    """
+    url = 'http://mobilebtv.com:8080/api/v3.0/epg'
+    referer = 'http://mobilebtv.com:8080/view/v3.0/epg'
+    icon_url = 'http://mobilebtv.com:8080/static/images/epg/channelLogo/nsepg_{}.png'
 
     sess = requests.session()
     sess.headers.update({'User-Agent': ua, 'Referer': referer})
 
-    def request_json(form_data):
+    def request_json(api_url, form_data):
         ret = []
         try:
-            data = request_data(url, form_data, method='POST', output='json', session=sess)
-            if data['result'].lower() == 'ok':
-                ret = data['ServiceInfoArray']
+            data = request_data(api_url, form_data, method='GET', output='json', session=sess)
+            if data['statusCode'].lower() == 'ok':
+                ret = data['data']['ServiceInfoArray']
             else:
                 raise ValueError('유효한 응답이 아닙니다: %s' % data['reason'])
         except Exception as e:
@@ -287,7 +292,7 @@ def GetEPGFromSK(ChannelInfos):
             'Icon_url': icon_url.format(x['ID_SVC']),
             'Source': 'SK',
             'ServiceId': x['ID_SVC']
-        } for x in request_json({'variable': 'IF_LIVECHART_ALL'})]
+        } for x in request_json(url, {})]
         dump_channels('SK', all_channels)
         all_services = [x['ServiceId'] for x in all_channels]
     except Exception as e:
@@ -304,15 +309,15 @@ def GetEPGFromSK(ChannelInfos):
             log.warning('없는 서비스 아이디입니다: %s', ChannelInfo)
 
     params = {
-        'variable': 'IF_LIVECHART_DETAIL',
         'o_date': 'EPGDATE',
-        'svc_ids': '|'.join([info[3].strip() for info in newChannelInfos]),
+        'serviceIds': '|'.join([info[3].strip() for info in newChannelInfos]),
     }
 
     for k in range(period):
         day = today + timedelta(days=k)
+        # 기존에 날짜를 지정해서 가져오는 파라미터가 없어진것 같다. 누가 제보 좀...
         params.update({'o_date': day.strftime('%Y%m%d')})
-        channels = {x['ID_SVC']: x['EventInfoArray'] for x in request_json(params)}
+        channels = {x['ID_SVC']: x['EventInfoArray'] for x in request_json(url + '/details', params)}
 
         for ChannelInfo in newChannelInfos:
             ServiceId = ChannelInfo[3]
@@ -323,6 +328,7 @@ def GetEPGFromSK(ChannelInfos):
                 log.warning('해당 날짜에 EPG 정보가 없거나 없는 채널입니다: %s %s' % (day.strftime('%Y%m%d'), ChannelInfo))
 
     log.info('SK EPG 완료: {}/{}개 채널'.format(len(newChannelInfos), len(ChannelInfos)))
+    """
 
 
 def GetEPGFromSKB(ChannelInfos):
@@ -564,14 +570,14 @@ def GetEPGFromWAVVE(reqChannels):
                     # TODO: 제목 너무 지저분/부실하네
                     # TODO: python3에서 re.match에 더 많이 잡힘. 왜?
                     programName = unescape(program['title'])
-                    pattern = '^(.*?)(?:\s*[\(<]([\d,회]+)[\)>])?(?:\s*<([^<]*?)>)?(\((재)\))?$'
+                    pattern = '^(.*?)(?:\s*[\(<]?([\d]+)회[\)>]?)?(?:\([월화수목금토일]?\))?(\([선별전주\(\)재방]*?재[\d방]?\))?\s*(?:\[(.+)\])?$'
                     matches = re.match(pattern, programName)
                     if matches:
                         programName = matches.group(1).strip() if matches.group(1) else ''
-                        subprogramName = matches.group(3).strip() if matches.group(3) else ''
+                        subprogramName = matches.group(4).strip() if matches.group(4) else ''
                         episode = matches.group(2).replace('회', '') if matches.group(2) else ''
                         episode = '' if episode == '0' else episode
-                        rebroadcast = True if matches.group(5) else False
+                        rebroadcast = True if matches.group(3) else False
                     else:
                         subprogramName, episode, rebroadcast = '', '', False
 
@@ -579,26 +585,27 @@ def GetEPGFromWAVVE(reqChannels):
 
                     # 추가 정보 가져오기
                     desc, category, iconurl, actors, producers = '', '', '', '', ''
-                    programid = program['programid'].strip()
-                    if programid and (programid not in programcache):
-                        # 개별 programid가 없는 경우도 있으니 체크해야함
-                        programdetail = getWAVVEProgramDetails(programid, sess)
-                        if programdetail is not None:
-                            programdetail[u'hit'] = 0  # to know cache hit rate
-                        programcache[programid] = programdetail
+                    if wavve_more_details:
+                        programid = program['programid'].strip()
+                        if programid and (programid not in programcache):
+                            # 개별 programid가 없는 경우도 있으니 체크해야함
+                            programdetail = getWAVVEProgramDetails(programid, sess)
+                            if programdetail is not None:
+                                programdetail[u'hit'] = 0  # to know cache hit rate
+                            programcache[programid] = programdetail
 
-                    if (programid in programcache) and bool(programcache[programid]):
-                        programcache[programid][u'hit'] += 1
-                        programdetail = programcache[programid]
-                        # TODO: 추가 제목 정보 활용
-                        # programtitle = programdetail['programtitle']
-                        # log.info('%s / %s' % (programName, programtitle))
-                        desc = '\n'.join([x.replace('<br>', '\n').strip() for x in programdetail['programsynopsis'].splitlines()])     # carriage return(\r) 제거, <br> 제거
-                        category = programdetail['genretext'].strip()
-                        iconurl = 'https://' + programdetail['programposterimage'].strip()
-                        # tags = programdetail['tags']['list'][0]['text']
-                        if programdetail['actors']['list']:
-                            actors = ','.join([x['text'] for x in programdetail['actors']['list']])
+                        if (programid in programcache) and bool(programcache[programid]):
+                            programcache[programid][u'hit'] += 1
+                            programdetail = programcache[programid]
+                            # TODO: 추가 제목 정보 활용
+                            # programtitle = programdetail['programtitle']
+                            # log.info('%s / %s' % (programName, programtitle))
+                            desc = '\n'.join([x.replace('<br>', '\n').strip() for x in programdetail['programsynopsis'].splitlines()])     # carriage return(\r) 제거, <br> 제거
+                            category = programdetail['genretext'].strip()
+                            iconurl = 'https://' + programdetail['programposterimage'].strip()
+                            # tags = programdetail['tags']['list'][0]['text']
+                            if programdetail['actors']['list']:
+                                actors = ','.join([x['text'] for x in programdetail['actors']['list']])
 
                     writeProgram({
                         'channelId': channelid,
@@ -702,6 +709,13 @@ def GetEPGFromTVING(reqChannels):
             if img_list:
                 return 'https://image.tving.com' + (img_list[0]['url'] if 'url' in img_list[0] else img_list[0]['url2'])
 
+    def grouper(iterable, n):
+        it = iter(iterable)
+        group = tuple(islice(it, n))
+        while group:
+            yield group
+            group = tuple(islice(it, n))
+
     gcode = {
         'CPTG0100': 0,
         'CPTG0200': 7,
@@ -743,23 +757,23 @@ def GetEPGFromTVING(reqChannels):
     # reqChannels = all_channels  # request all channels
     reqChannels = tmpChannels
 
-    params.update({"channelCode": ','.join([x['ServiceId'].strip() for x in reqChannels])})
-
     channeldict = {}
-    for k in range(period):
-        day = today + timedelta(days=k)
-        params.update({'broadDate': day.strftime('%Y%m%d'), 'broadcastDate': day.strftime('%Y%m%d')})
-        for t in range(8):
-            params.update({
-                "startBroadTime": '{:02d}'.format(t*3) + "0000",
-                "endBroadTime": '{:02d}'.format(t*3+3) + "0000",
-            })
-            for ch in get_json(params):
-                if ch['channel_code'] in channeldict:
-                    if ch['schedules']:
-                        channeldict[ch['channel_code']]['schedules'] += ch['schedules']
-                else:
-                    channeldict[ch['channel_code']] = ch
+    for chgroup in grouper([x['ServiceId'].strip() for x in reqChannels], 20):
+        params.update({"channelCode": ','.join(list(chgroup))})
+        for k in range(period):
+            day = today + timedelta(days=k)
+            params.update({'broadDate': day.strftime('%Y%m%d'), 'broadcastDate': day.strftime('%Y%m%d')})
+            for t in range(8):
+                params.update({
+                    "startBroadTime": '{:02d}'.format(t*3) + "0000",
+                    "endBroadTime": '{:02d}'.format(t*3+3) + "0000",
+                })
+                for ch in get_json(params):
+                    if ch['channel_code'] in channeldict:
+                        if ch['schedules']:
+                            channeldict[ch['channel_code']]['schedules'] += ch['schedules']
+                    else:
+                        channeldict[ch['channel_code']] = ch
 
     for reqChannel in reqChannels:
         if not ('ServiceId' in reqChannel and reqChannel['ServiceId'] in channeldict):
@@ -1105,6 +1119,7 @@ conf = {
     'default_episode': 'y',
     'default_verbose': 'n',
     'default_xmltvns': 'n',
+    'WAVVE_more_details': 'n',
 }
 for k in conf:
     if k in args and args[k]:
@@ -1120,8 +1135,8 @@ for k in conf:
 # validate settings
 #
 MyISP = conf['MyISP']
-if not any(MyISP in s for s in ['ALL', 'KT', 'LG', 'SK']):
-    log.error("MyISP는 ALL, KT, LG, SK만 가능합니다.")
+if not any(MyISP in s for s in ['ALL', 'KT', 'LG', 'SK', 'SKB']):
+    log.error("MyISP는 ALL, KT, LG, SK, SKB만 가능합니다.")
     sys.exit(1)
 
 cids = [x['Id'] for x in Channeldatajson if 'Id' in x]
@@ -1194,5 +1209,11 @@ if not any(conf['default_fetch_limit'] in s for s in '1234567'):
     sys.exit(1)
 else:
     period = int(conf['default_fetch_limit'])
+
+if not any(conf['WAVVE_more_details'] in s for s in 'yn'):
+    log.error("WAVVE_more_details는 y, n만 가능합니다.")
+    sys.exit(1)
+else:
+    wavve_more_details = conf['WAVVE_more_details'] == 'y'
 
 getEpg()
