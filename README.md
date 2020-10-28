@@ -10,7 +10,7 @@
    
    = Total 178 Channels
 
-* xml addr (updated 2020-10-27)
+* xml addr (updated 2020-10-28)
 
   https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
 
