@@ -1,4 +1,11 @@
 {
+"Id": 59,
+"Name": "KBSN 스포츠",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_132.png",
+"Source": "KT",
+"ServiceId": "59"
+},
+{
 "Id": 21,
 "Name": "OCN",
 "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
