@@ -1,0 +1,21 @@
+{
+"Id": 21,
+"Name": "OCN",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
+"Source": "KT",
+"ServiceId": "21"
+},
+{
+"Id": 44,
+"Name": "OCN Movies",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04601.png",
+"Source": "KT",
+"ServiceId": "44"
+},
+{
+"Id": 76,
+"Name": "OCN Thrills",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png",
+"Source": "KT",
+"ServiceId": "76"
+}

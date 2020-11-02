@@ -3,6 +3,7 @@ WAVVE_name="Channel_WAVVE"
 TVING_name="Channel_TVING"
 #everyon_name="Channel_everyon"
 videoportal_name="Channel_videoportal"
+etc_name="Channel_etc"
 total=0
 
 #dir=`pwd`
@@ -75,6 +76,20 @@ if [ -f ${dir}/${videoportal_name} ]; then
 else
     flag=0
     printf '   videoportal : No list\n'
+fi
+
+if [ -f ${dir}/${etc_name} ]; then
+    if [ ${flag} == 1 ]; then
+	echo "," >> ${dir}/${name}
+    fi
+    cat ${dir}/${etc_name} >> ${dir}/${name}
+    flag=1
+    cnt=`grep -o Source ${dir}/${etc_name} | wc -w`
+    printf '   etc : Channels %s\n' "${cnt}"
+    total=`expr ${total} + ${cnt}`
+else
+    flag=0
+    printf '   etc : No list\n'
 fi
 
 echo "" >> ${dir}/${name}
