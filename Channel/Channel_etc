@@ -6,13 +6,6 @@
 "ServiceId": "59"
 },
 {
-"Id": 60,
-"Name": "MBC 스포츠+",
-"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_131.png",
-"Source": "KT",
-"ServiceId": "60"
-},
-{
 "Id": 21,
 "Name": "OCN",
 "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
@@ -32,6 +25,20 @@
 "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png",
 "Source": "KT",
 "ServiceId": "76"
+},
+{
+"Id": 211,
+"Name": "SPOTV ON",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_136.png",
+"Source": "KT",
+"ServiceId": "211"
+},
+{
+"Id": 212,
+"Name": "SPOTV ON 2",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_137.png",
+"Source": "KT",
+"ServiceId": "212"
 },
 {
 "TVING Name": "OCN",

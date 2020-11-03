@@ -34,6 +34,13 @@
 "ServiceId": "58"
 },
 {
+"Id": 382,
+"Name": "MBC 스포츠+",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_131.png",
+"Source": "KT",
+"ServiceId": "60"
+},
+{
 "Id": 383,
 "Name": "SPOTV2",
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_424.png",

@@ -188,6 +188,7 @@ tving|C43342, TVING, THE K-POP, 음악
 174, VIDEOPORTAL, CNBC, 해외
 175, VIDEOPORTAL, 플레이런TV, 교육
 381, VIDEOPORTAL, SBS스포츠, 스포츠
+382, VIDEOPORTAL, MBC 스포츠+, 스포츠
 383, VIDEOPORTAL, SPOTV2, 스포츠
 596, VIDEOPORTAL, OBS, 지상파
 614, VIDEOPORTAL, SBS GOLF, 스포츠
@@ -224,8 +225,3 @@ tving|C43342, TVING, THE K-POP, 음악
 793, VIDEOPORTAL, JEI EnglishTV, 교육
 794, VIDEOPORTAL, 가요TV, 음악
 813, VIDEOPORTAL, W 쇼핑, 쇼핑
-59, etc, KBSN 스포츠, 스포츠
-60, etc, MBC 스포츠+, 스포츠
-21, etc, OCN, 영화
-44, etc, OCN Movies, 영화
-76, etc, OCN Thrills, 영화
