@@ -6,9 +6,9 @@
    
    TVING : Channels 31
    
-   videoportal : Channels 41
+   videoportal : Channels 42
    
-   = Total 178 Channels
+   = Total 179 Channels
 
 * xml addr (updated 2020-11-03)
 
