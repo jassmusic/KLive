@@ -1,4 +1,11 @@
 {
+"Id": 53,
+"Name": "IB SPORTS",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_123.png",
+"Source": "KT",
+"ServiceId": "53"
+},
+{
 "Id": 59,
 "Name": "KBSN 스포츠",
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_132.png",
