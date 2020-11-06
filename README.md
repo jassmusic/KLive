@@ -1,6 +1,6 @@
 # KLive for SJVA
 
-* 20.10.23 기준
+* 20.11.04 기준
 
    WAVVE : Channels 106
    
@@ -13,5 +13,7 @@
 * xml addr (updated 2020-11-06)
 
   https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
+
+  https://raw.githubusercontent.com/jassmusic/KLive/master/tving.xml
 
 
