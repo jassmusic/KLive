@@ -117,6 +117,7 @@ tving|C00593, TVING, YTN, 뉴스
 tving|C00611, TVING, LIFETIME, 여성
 tving|C00708, TVING, MBN, 종합편성
 tving|C00805, TVING, JTBC GOLF&SPORTS, 스포츠
+tving|C01101, TVING, YTN Life, 교양
 tving|C01141, TVING, XtvN, 예능
 tving|C01142, TVING, ONSTYLE, 여성
 tving|C01143, TVING, O tvN, 예능
@@ -124,8 +125,11 @@ tving|C01581, TVING, TV CHOSUN, 종합편성
 tving|C01582, TVING, JTBC, 종합편성
 tving|C01583, TVING, 채널A, 종합편성
 tving|C01723, TVING, 연합뉴스TV, 뉴스
+tving|C04601, TVING, OCN Movies, 영화
+tving|C05661, TVING, 디즈니채널, 어린이
 tving|C06941, TVING, 투니버스, 어린이
 tving|C07381, TVING, OCN, 영화
+tving|C07382, TVING, OCN Thrills, 영화
 tving|C15152, TVING, CH.DIA, 예능
 tving|C15347, TVING, YTN사이언스, 교양
 tving|C15741, TVING, JTBC2, 예능
@@ -137,7 +141,7 @@ tving|C22041, TVING, JTBC4, 예능
 tving|C43241, TVING, Nickelodeon, 어린이
 tving|C43242, TVING, SBS MTV, 음악
 tving|C43341, TVING, SBS F!L, 음악
-tving|C43342, TVING, THE K-POP, 음악
+tving|C44441, TVING, KCON:TACT SEASON 2, 음악
 1, EVERYON, CMC가족오락TV, 예능
 1016, EVERYON, 채널차이나, 해외드라마
 1065, EVERYON, 리얼TV, 교양

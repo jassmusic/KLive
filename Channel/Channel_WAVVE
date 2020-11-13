@@ -621,16 +621,4 @@
 "Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2101_Img_20201013140748.jpg",
 "Source": "WAVVE",
 "ServiceId": "F2101"
-},
-{
-"WAVVE Name": "SEE TOGETHER CHALLENGE",
-"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/C9221_Img_20201021093918.jpg",
-"Source": "WAVVE",
-"ServiceId": "C9221"
-},
-{
-"WAVVE Name": "wavve LoL",
-"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/C9232_Img_20200618171422.jpg",
-"Source": "WAVVE",
-"ServiceId": "C9232"
 }

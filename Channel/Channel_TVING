@@ -65,6 +65,12 @@
 "ServiceId": "C00805"
 },
 {
+"TVING Name": "YTN Life",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01101.png",
+"Source": "TVING",
+"ServiceId": "C01101"
+},
+{
 "TVING Name": "XtvN",
 "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01141.png",
 "Source": "TVING",
@@ -107,10 +113,34 @@
 "ServiceId": "C01723"
 },
 {
+"TVING Name": "OCN Movies",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04601.png",
+"Source": "TVING",
+"ServiceId": "C04601"
+},
+{
+"TVING Name": "디즈니채널",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C05661.png",
+"Source": "TVING",
+"ServiceId": "C05661"
+},
+{
 "TVING Name": "투니버스",
 "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C06941.png",
 "Source": "TVING",
 "ServiceId": "C06941"
+},
+{
+"TVING Name": "OCN",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
+"Source": "TVING",
+"ServiceId": "C07381"
+},
+{
+"TVING Name": "OCN Thrills",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png",
+"Source": "TVING",
+"ServiceId": "C07382"
 },
 {
 "TVING Name": "CH.DIA",
@@ -179,8 +209,8 @@
 "ServiceId": "C43341"
 },
 {
-"TVING Name": "THE K-POP",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43342.png",
+"TVING Name": "KCON:TACT SEASON 2",
+"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C44441.png",
 "Source": "TVING",
-"ServiceId": "C43342"
+"ServiceId": "C44441"
 }

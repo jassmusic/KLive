@@ -46,22 +46,4 @@
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_137.png",
 "Source": "KT",
 "ServiceId": "212"
-},
-{
-"TVING Name": "OCN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
-"Source": "TVING",
-"ServiceId": "C07381"
-},
-{
-"TVING Name": "OCN Movies",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04601.png",
-"Source": "TVING",
-"ServiceId": "C04601"
-},
-{
-"TVING Name": "OCN Thrills",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png",
-"Source": "TVING",
-"ServiceId": "C07382"
 }
