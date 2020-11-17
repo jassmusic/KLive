@@ -1,6 +1,6 @@
 #!/bin/bash
 WAVVE_name="Channel_WAVVE"
-TVING_name="Channel_TVING"
+#TVING_name="Channel_TVING"
 #everyon_name="Channel_everyon"
 videoportal_name="Channel_videoportal"
 etc_name="Channel_etc"
@@ -34,6 +34,7 @@ else
     printf '   WAVVE : No list\n'
 fi
 
+: << "END"
 if [ -f ${dir}/${TVING_name} ]; then
     if [ ${flag} == 1 ]; then
         echo "," >> ${dir}/${name}
@@ -47,6 +48,7 @@ else
     flag=0
     printf '   TVING : No list\n'
 fi
+END
 
 : << "END"
 if [ -f ${dir}/${everyon_name} ]; then
