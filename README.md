@@ -10,7 +10,7 @@
    
       Baseball : Channels 8
    
-* xml addr (updated 2020-11-17)
+* xml addr (updated 2020-11-19)
 
 * xml addr (updated 2020-11-16)
 

@@ -71,6 +71,18 @@
 "ServiceId": "C2101"
 },
 {
+"WAVVE Name": "한국경제TV",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2101_Img_20201013140748.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2101"
+},
+{
+"WAVVE Name": "매일경제TV",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2001_Img_20201117230801.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2001"
+},
+{
 "WAVVE Name": "CCTV4",
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/K12.jpg",
 "Source": "WAVVE",
@@ -611,14 +623,8 @@
 "ServiceId": "C2709"
 },
 {
-"WAVVE Name": "KISS - 트로트 아리랑",
+"WAVVE Name": "KISS - 키스 더 트롯",
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/C2710_Img_20200317143409.jpg",
 "Source": "WAVVE",
 "ServiceId": "C2710"
-},
-{
-"WAVVE Name": "한국경제TV",
-"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2101_Img_20201013140748.jpg",
-"Source": "WAVVE",
-"ServiceId": "F2101"
 }

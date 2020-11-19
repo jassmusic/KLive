@@ -1,0 +1,57 @@
+{
+"Id": streamlink|streamlink1,
+"Name": "THE K-POP Live",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink2,
+"Name": "SBS 인기가요+TV가요 Live",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink3,
+"Name": "YTN Live",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink4,
+"Name": "연합뉴스TV Live",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink5,
+"Name": "KBSN PLUS Live",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink6,
+"Name": "streamlink Test1",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink7,
+"Name": "streamlink Test2",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": streamlink|streamlink8,
+"Name": "streamlink Test3",
+"Icon_url": "https://www.keejob.com/media/recruiter/recruiter_14401/logo-14401-20171206-120853.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+}
+

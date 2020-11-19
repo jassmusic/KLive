@@ -318,7 +318,7 @@ END
 	fi
 
 	# ADD
-	CHANNEL_NAME="Channel_add"
+	CHANNEL_NAME="Channel_baseball"
 	ADD_ID="BASEBALL"
 	CHANNEL_ID="VIDEOPORTAL"
 	channel_id="videoportal"
@@ -386,6 +386,286 @@ END
 		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
 	else
 		printf '    %s : No list\n' "${ADD_ID}"
+	fi
+	
+	# kbs
+	CHANNEL_NAME="Channel_kbs"
+	CHANNEL_ID="kbs"
+	channel_id="kbs"
+	CHNO=`expr ${CHNO} + 1`
+	if [ -f "${CHANNEL_DIR}/${CHANNEL_NAME}" ]; then
+		CNT=`grep -o Source ${CHANNEL_DIR}/${CHANNEL_NAME} | wc -w`
+		printf '    %s : Channels %s ....' "${CHANNEL_ID}" "${CNT}"
+		# tmp 설정
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep '"Id"' >> ${CHANNEL_DIR}/tmpId
+		sed -i 's/"Id": //' ${CHANNEL_DIR}/tmpId
+		sed -i 's/,//' ${CHANNEL_DIR}/tmpId
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep Name >> ${CHANNEL_DIR}/tmpName
+		sed -i "s/\"Name\": \"//" ${CHANNEL_DIR}/tmpName
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpName
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep url >> ${CHANNEL_DIR}/tmpurl
+		sed -i 's/"Icon_url": "//' ${CHANNEL_DIR}/tmpurl
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpurl
+		cat ${CHANNEL_DIR}/${GROUP_NAME} | grep ${CHANNEL_ID} >> ${CHANNEL_DIR}/tmpgroup
+		# m3u 생성
+		LINE_CNT=1
+		while [ 1 ] ;
+		do
+			LINE_ID=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_CNT_TEMP=`expr ${LINE_CNT} + 1`
+			LINE_ID_PLUS=$(sed -n ${LINE_CNT_temp}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_NAME=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpName) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_URL=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpurl) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_GROUP=$(cat ${CHANNEL_DIR}/tmpgroup | grep "${LINE_ID}" | grep "${LINE_NAME}" | awk '{ print $NF }')
+			if [ -z "${LINE_GROUP}" ] ; then
+                LINE_GROUP=${channel_id}
+            fi
+			if [ ! -z "${LINE_ID}" ] && [ ! -z "${LINE_ID_PLUS}" ] ; then
+				STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				if [ "${UNIQUE_FLAG}" == "False" ] ; then
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+				else
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+				fi
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				printf '\r    %s : Channels %s .... %s' "${CHANNEL_ID}" "${CNT}" "${LINE_CNT}"
+				LINE_CNT=`expr ${LINE_CNT} + 1`
+			    CHNO=`expr ${CHNO} + 1`
+			else
+				if [ ! -z "${LINE_ID}" ] && [ -z "${LINE_ID_PLUS}" ] ; then
+					STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					if [ "${UNIQUE_FLAG}" == "False" ] ; then
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+					else
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+					fi
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					break
+				else
+					LINE_CNT=`expr ${LINE_CNT} - 1`
+			        CHNO=`expr ${CHNO} - 1`
+					break
+				fi
+			fi
+		done
+		printf '\r    %s : Channels %s .... done\n' "${CHANNEL_ID}" "${LINE_CNT}"
+		# tmp 삭제
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+	else
+		printf '    %s : No list\n' "${CHANEL_ID}"
+	fi	
+	
+	# sbs
+	CHANNEL_NAME="Channel_sbs"
+	CHANNEL_ID="sbs"
+	channel_id="sbs"
+	CHNO=`expr ${CHNO} + 1`
+	if [ -f "${CHANNEL_DIR}/${CHANNEL_NAME}" ]; then
+		CNT=`grep -o Source ${CHANNEL_DIR}/${CHANNEL_NAME} | wc -w`
+		printf '    %s : Channels %s ....' "${CHANNEL_ID}" "${CNT}"
+		# tmp 설정
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep '"Id"' >> ${CHANNEL_DIR}/tmpId
+		sed -i 's/"Id": //' ${CHANNEL_DIR}/tmpId
+		sed -i 's/,//' ${CHANNEL_DIR}/tmpId
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep Name >> ${CHANNEL_DIR}/tmpName
+		sed -i "s/\"Name\": \"//" ${CHANNEL_DIR}/tmpName
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpName
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep url >> ${CHANNEL_DIR}/tmpurl
+		sed -i 's/"Icon_url": "//' ${CHANNEL_DIR}/tmpurl
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpurl
+		cat ${CHANNEL_DIR}/${GROUP_NAME} | grep ${CHANNEL_ID} >> ${CHANNEL_DIR}/tmpgroup
+		# m3u 생성
+		LINE_CNT=1
+		while [ 1 ] ;
+		do
+			LINE_ID=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_CNT_TEMP=`expr ${LINE_CNT} + 1`
+			LINE_ID_PLUS=$(sed -n ${LINE_CNT_temp}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_NAME=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpName) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_URL=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpurl) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_GROUP=$(cat ${CHANNEL_DIR}/tmpgroup | grep "${LINE_ID}" | grep "${LINE_NAME}" | awk '{ print $NF }')
+			if [ -z "${LINE_GROUP}" ] ; then
+                LINE_GROUP=${channel_id}
+            fi
+			if [ ! -z "${LINE_ID}" ] && [ ! -z "${LINE_ID_PLUS}" ] ; then
+				STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				if [ "${UNIQUE_FLAG}" == "False" ] ; then
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+				else
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+				fi
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				printf '\r    %s : Channels %s .... %s' "${CHANNEL_ID}" "${CNT}" "${LINE_CNT}"
+				LINE_CNT=`expr ${LINE_CNT} + 1`
+			    CHNO=`expr ${CHNO} + 1`
+			else
+				if [ ! -z "${LINE_ID}" ] && [ -z "${LINE_ID_PLUS}" ] ; then
+					STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					if [ "${UNIQUE_FLAG}" == "False" ] ; then
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+					else
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+					fi
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					break
+				else
+					LINE_CNT=`expr ${LINE_CNT} - 1`
+			        CHNO=`expr ${CHNO} - 1`
+					break
+				fi
+			fi
+		done
+		printf '\r    %s : Channels %s .... done\n' "${CHANNEL_ID}" "${LINE_CNT}"
+		# tmp 삭제
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+	else
+		printf '    %s : No list\n' "${CHANEL_ID}"
+	fi
+
+	# youtube-dl
+	CHANNEL_NAME="Channel_youtubedl"
+	CHANNEL_ID="youtubedl"
+	channel_id="youtubedl"
+	CHNO=`expr ${CHNO} + 1`
+	if [ -f "${CHANNEL_DIR}/${CHANNEL_NAME}" ]; then
+		CNT=`grep -o Source ${CHANNEL_DIR}/${CHANNEL_NAME} | wc -w`
+		printf '    %s : Channels %s ....' "${CHANNEL_ID}" "${CNT}"
+		# tmp 설정
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep '"Id"' >> ${CHANNEL_DIR}/tmpId
+		sed -i 's/"Id": //' ${CHANNEL_DIR}/tmpId
+		sed -i 's/,//' ${CHANNEL_DIR}/tmpId
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep Name >> ${CHANNEL_DIR}/tmpName
+		sed -i "s/\"Name\": \"//" ${CHANNEL_DIR}/tmpName
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpName
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep url >> ${CHANNEL_DIR}/tmpurl
+		sed -i 's/"Icon_url": "//' ${CHANNEL_DIR}/tmpurl
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpurl
+		cat ${CHANNEL_DIR}/${GROUP_NAME} | grep ${CHANNEL_ID} >> ${CHANNEL_DIR}/tmpgroup
+		# m3u 생성
+		LINE_CNT=1
+		while [ 1 ] ;
+		do
+			LINE_ID=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_CNT_TEMP=`expr ${LINE_CNT} + 1`
+			LINE_ID_PLUS=$(sed -n ${LINE_CNT_temp}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_NAME=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpName) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_URL=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpurl) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_GROUP=$(cat ${CHANNEL_DIR}/tmpgroup | grep "${LINE_ID}" | grep "${LINE_NAME}" | awk '{ print $NF }')
+			if [ -z "${LINE_GROUP}" ] ; then
+                LINE_GROUP=${channel_id}
+            fi
+			if [ ! -z "${LINE_ID}" ] && [ ! -z "${LINE_ID_PLUS}" ] ; then
+				STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				if [ "${UNIQUE_FLAG}" == "False" ] ; then
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+				else
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+				fi
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				printf '\r    %s : Channels %s .... %s' "${CHANNEL_ID}" "${CNT}" "${LINE_CNT}"
+				LINE_CNT=`expr ${LINE_CNT} + 1`
+			    CHNO=`expr ${CHNO} + 1`
+			else
+				if [ ! -z "${LINE_ID}" ] && [ -z "${LINE_ID_PLUS}" ] ; then
+					STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					if [ "${UNIQUE_FLAG}" == "False" ] ; then
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+					else
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+					fi
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					break
+				else
+					LINE_CNT=`expr ${LINE_CNT} - 1`
+			        CHNO=`expr ${CHNO} - 1`
+					break
+				fi
+			fi
+		done
+		printf '\r    %s : Channels %s .... done\n' "${CHANNEL_ID}" "${LINE_CNT}"
+		# tmp 삭제
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+	else
+		printf '    %s : No list\n' "${CHANEL_ID}"
+	fi
+	
+	# streamlink
+	CHANNEL_NAME="Channel_streamlink"
+	CHANNEL_ID="streamlink"
+	channel_id="streamlink"
+	CHNO=`expr ${CHNO} + 1`
+	if [ -f "${CHANNEL_DIR}/${CHANNEL_NAME}" ]; then
+		CNT=`grep -o Source ${CHANNEL_DIR}/${CHANNEL_NAME} | wc -w`
+		printf '    %s : Channels %s ....' "${CHANNEL_ID}" "${CNT}"
+		# tmp 설정
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep '"Id"' >> ${CHANNEL_DIR}/tmpId
+		sed -i 's/"Id": //' ${CHANNEL_DIR}/tmpId
+		sed -i 's/,//' ${CHANNEL_DIR}/tmpId
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep Name >> ${CHANNEL_DIR}/tmpName
+		sed -i "s/\"Name\": \"//" ${CHANNEL_DIR}/tmpName
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpName
+		cat ${CHANNEL_DIR}/${CHANNEL_NAME} | grep url >> ${CHANNEL_DIR}/tmpurl
+		sed -i 's/"Icon_url": "//' ${CHANNEL_DIR}/tmpurl
+		sed -i 's/",//' ${CHANNEL_DIR}/tmpurl
+		cat ${CHANNEL_DIR}/${GROUP_NAME} | grep ${CHANNEL_ID} >> ${CHANNEL_DIR}/tmpgroup
+		# m3u 생성
+		LINE_CNT=1
+		while [ 1 ] ;
+		do
+			LINE_ID=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_CNT_TEMP=`expr ${LINE_CNT} + 1`
+			LINE_ID_PLUS=$(sed -n ${LINE_CNT_temp}p ${CHANNEL_DIR}/tmpId) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_NAME=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpName) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_URL=$(sed -n ${LINE_CNT}p ${CHANNEL_DIR}/tmpurl) # | sed -e 's/^ *//g' -e 's/ *$//g')
+			LINE_GROUP=$(cat ${CHANNEL_DIR}/tmpgroup | grep "${LINE_ID}" | grep "${LINE_NAME}" | awk '{ print $NF }')
+			if [ -z "${LINE_GROUP}" ] ; then
+                LINE_GROUP=${channel_id}
+            fi
+			if [ ! -z "${LINE_ID}" ] && [ ! -z "${LINE_ID_PLUS}" ] ; then
+				STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				if [ "${UNIQUE_FLAG}" == "False" ] ; then
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+				else
+					STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+				fi
+				echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+				printf '\r    %s : Channels %s .... %s' "${CHANNEL_ID}" "${CNT}" "${LINE_CNT}"
+				LINE_CNT=`expr ${LINE_CNT} + 1`
+			    CHNO=`expr ${CHNO} + 1`
+			else
+				if [ ! -z "${LINE_ID}" ] && [ -z "${LINE_ID_PLUS}" ] ; then
+					STR="#EXTINF:-1 tvg-id=\"${LINE_ID}\" tvg-name=\"${LINE_NAME}\" tvg-logo=\"${LINE_URL}\" group-title=\"${LINE_GROUP}\" tvg-chno=\"${CHNO}\" tvh-chnum=\"${CHNO}\",${LINE_NAME}"
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					if [ "${UNIQUE_FLAG}" == "False" ] ; then
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default"
+					else
+						STR="${SJVA_DDNS}/klive/api/url.m3u8?m=url&s=${channel_id}&i=${LINE_ID#*|}&q=default&apikey=${SJVA_UNIQUE}"
+					fi
+					echo ${STR} >> "${TARGET_DIR}/${M3U_NAME}"
+					break
+				else
+					LINE_CNT=`expr ${LINE_CNT} - 1`
+			        CHNO=`expr ${CHNO} - 1`
+					break
+				fi
+			fi
+		done
+		printf '\r    %s : Channels %s .... done\n' "${CHANNEL_ID}" "${LINE_CNT}"
+		# tmp 삭제
+		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+	else
+		printf '    %s : No list\n' "${CHANEL_ID}"
 	fi
 	
 	printf '    Total %s Channels\n' "${CHNO}"

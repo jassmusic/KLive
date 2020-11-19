@@ -11,6 +11,8 @@ wavve|C2601, WAVVE, TV CHOSUN, 종합편성
 wavve|C2501, WAVVE, 채널A, 종합편성
 wavve|Y01, WAVVE, 연합뉴스TV, 뉴스
 wavve|C2101, WAVVE, YTN, 뉴스
+wavve|F2101, WAVVE, 한국경제TV, 경제
+wavve|F2001, WAVVE, 매일경제TV, 경제
 wavve|K12, WAVVE, CCTV4, 해외
 wavve|K25, WAVVE, CGTN, 해외
 wavve|C4201, WAVVE, GS SHOP, 쇼핑
@@ -60,7 +62,6 @@ wavve|C7301, WAVVE, 동아TV, 여성
 wavve|C6901, WAVVE, 폴라리스TV, 취미
 wavve|C5901, WAVVE, HISTORY, 교양
 wavve|C5902, WAVVE, LIFETIME, 여성
-wavve|C8001, WAVVE, KOK TV, wavve정주행
 wavve|X01, WAVVE, EDGETV, 드라마
 wavve|X02, WAVVE, FUNTV, 교양
 wavve|C8701, WAVVE, 텔레노벨라, 해외드라마
@@ -84,9 +85,6 @@ wavve|F1301, WAVVE, 대교어린이TV, 어린이
 wavve|F0501, WAVVE, BTN불교TV, 종교
 wavve|F0601, WAVVE, CTS기독교TV, 종교
 wavve|F0701, WAVVE, 가톨릭평화방송, 종교
-wavve|C9221, WAVVE, SEE TOGETHER CHALLENGE, 종교
-wavve|C9232, WAVVE, wavve LoL, 스포츠
-wavve|F2101, WAVVE, 한국경제TV, 경제
 wavve|K07, WAVVE, KBS1RADIO, 라디오
 wavve|K08, WAVVE, KBSCOOLFM, 라디오
 wavve|M08, WAVVE, MBC FM4U, 라디오
@@ -105,7 +103,7 @@ wavve|C2706, WAVVE, KISS - 재즈 라운지, 라디오
 wavve|C2707, WAVVE, KISS - Dog & Mom, 라디오
 wavve|C2708, WAVVE, KISS - 명품 클래식, 라디오
 wavve|C2709, WAVVE, KISS - 한국인이 사랑한 팝송, 라디오
-wavve|C2710, WAVVE, KISS - 트로트 아리랑, 라디오
+wavve|C2710, WAVVE, KISS - 키스 더 트롯, 라디오
 tving|C00544, TVING, 중화TV, 해외드라마
 tving|C00551, TVING, tvN, 예능
 tving|C00575, TVING, Olive, 여성
@@ -142,51 +140,6 @@ tving|C43241, TVING, Nickelodeon, 어린이
 tving|C43242, TVING, SBS MTV, 음악
 tving|C43341, TVING, SBS F!L, 음악
 tving|C44441, TVING, KCON:TACT SEASON 2, 음악
-1, EVERYON, CMC가족오락TV, 예능
-1016, EVERYON, 채널차이나, 해외드라마
-1065, EVERYON, 리얼TV, 교양
-1094, EVERYON, 헬스메디tv, 정보
-1186, EVERYON, 실버아이TV, 교양
-1197, EVERYON, 인도어 스포츠 채널, 스포츠
-1298, EVERYON, Baby TV, 어린이
-13, EVERYON, 리빙TV, 취미
-1301, EVERYON, eduTV, 교육
-1371, EVERYON, 대한생활체육TV, 스포츠
-1384, EVERYON, FUN TV, 교양
-1396, EVERYON, 한국선거방송, 공공
-193, EVERYON, YTN life, 교양
-2, EVERYON, ETN연예, 예능
-207, EVERYON, K-바둑, 취미
-22, EVERYON, 서울경제TV, 경제
-23, EVERYON, 이데일리TV, 경제
-26, EVERYON, 한국경제TV, 경제
-263, EVERYON, 아이넷TV, 음악
-28, EVERYON, CTS기독교TV, 종교
-30, EVERYON, ONT, 취미
-31, EVERYON, 국방TV, 공공
-319, EVERYON, 텔레노벨라, 해외드라마
-33, EVERYON, 법률방송, 공공
-335, EVERYON, C channel, 종교
-337, EVERYON, 마운틴TV, 취미
-34, EVERYON, BTN불교TV, 종교
-35, EVERYON, 예술 TV아르떼, 음악
-36, EVERYON, 아리랑TV, 교양
-38, EVERYON, 한문화 중심채널 STB상생방송, 종교
-385, EVERYON, 팍스경제TV, 경제
-389, EVERYON, 이벤트TV, 음악
-393, EVERYON, KTV, 공공
-4, EVERYON, TRENDY, 여성
-40, EVERYON, tbsTV, 정보
-401, EVERYON, 국회방송, 공공
-42, EVERYON, 육아방송, 여성
-43, EVERYON, 동아TV, 여성
-44, EVERYON, GTV, 여성
-46, EVERYON, 복지TV, 공공
-553, EVERYON, BBS 불교방송, 종교
-563, EVERYON, 매일경제TV, 경제
-7, EVERYON, 채널 Ching, 해외드라마
-77, EVERYON, 소비자TV, 정보
-8, EVERYON, THE MOVIE, 영화
 172, VIDEOPORTAL, EBS PLUS1, 교육
 173, VIDEOPORTAL, EBS PLUS2, 교육
 174, VIDEOPORTAL, CNBC, 해외
@@ -237,3 +190,39 @@ tving|C44441, TVING, KCON:TACT SEASON 2, 음악
 397, VIDEOPORTAL, MLB1, 야구
 398, VIDEOPORTAL, MLB2, 야구
 399, VIDEOPORTAL, MLB3, 야구
+kbs|11, kbs, 1TV, kbs
+kbs|12, kbs, 2TV, kbs
+kbs|14, kbs, KBS WORLD, kbs
+kbs|81, kbs, KBS24, kbs
+kbs|N91, kbs, KBS24, kbs
+kbs|N92, kbs, KBSN 조이, kbs
+kbs|N94, kbs, KBSN W, kbs
+kbs|N96, kbs, KBSN KIDS, kbs
+sbs|S21, sbs, 김희재 TV, sbs
+sbs|S22, sbs, 런닝맨 TV, sbs
+sbs|S23, sbs, 스타일 TV, sbs
+sbs|S24, sbs, 야왕 TV, sbs
+sbs|S25, sbs, 흉부외과: 심장을 훔친 의사들 TV, sbs
+sbs|S26, sbs, 연인 TV, sbs
+sbs|S27, sbs, 세 번 결혼하는 여자 TV, sbs
+sbs|S28, sbs, 타짜 TV, sbs
+sbs|S29, sbs, 돌아와요 아저씨 TV, sbs
+sbs|S30, sbs, 천국의 계단 TV, sbs
+sbs|S31, sbs, 싸인 TV, sbs
+sbs|S32, sbs, 피노키오 TV, sbs
+youtubedl|youtube-dl1, youtubedl, MBC 스포츠+ Live, youtube-dl
+youtubedl|youtube-dl2, youtubedl, SPOTV Live, youtube-dl
+youtubedl|youtube-dl3, youtubedl, KBSN 스포츠 Live, youtube-dl
+youtubedl|youtube-dl4, youtubedl, SBS스포츠 Live, youtube-dl
+youtubedl|youtube-dl5, youtubedl, SPOTV2 Live, youtube-dl
+youtubedl|youtube-dl6, youtubedl, youtube-dl Test1, youtube-dl
+youtubedl|youtube-dl7, youtubedl, youtube-dl Test2, youtube-dl
+youtubedl|youtube-dl8, youtubedl, youtube-dl Test3, youtube-dl
+streamlink|streamlink1, streamlink, THE K-POP Live, streamlink
+streamlink|streamlink2, streamlink, SBS 인기가요+TV가요 Live, streamlink
+streamlink|streamlink3, streamlink, YTN Live, streamlink
+streamlink|streamlink4, streamlink, 연합뉴스TV Live, streamlink
+streamlink|streamlink5, streamlink, KBSN PLUS Live, streamlink
+streamlink|streamlink6, streamlink, streamlink Test1, streamlink
+streamlink|streamlink7, streamlink, streamlink Test2, streamlink
+streamlink|streamlink8, streamlink, streamlink Test3, streamlink

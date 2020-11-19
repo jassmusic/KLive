@@ -1,0 +1,57 @@
+{
+"Id": 001,
+"Name": "프로야구1",
+"Icon_url": "http://210.182.60.11/image/Baseball1_H200506.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 011,
+"Name": "프로야구2",
+"Icon_url": "http://210.182.60.11/image/Baseball2_H200506.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 041,
+"Name": "프로야구3",
+"Icon_url": "http://210.182.60.11/image/Baseball3_H200506.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 021,
+"Name": "프로야구4",
+"Icon_url": "http://210.182.60.11/image/Baseball4_H200512.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 031,
+"Name": "프로야구5",
+"Icon_url": "http://210.182.60.11/image/Baseball5_H200512.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 397,
+"Name": "MLB1",
+"Icon_url": "http://210.182.60.11/image/MLB1_H200721.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 398,
+"Name": "MLB2",
+"Icon_url": "http://210.182.60.11/image/MLB2_H200721.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": 399,
+"Name": "MLB3",
+"Icon_url": "http://210.182.60.11/image/MLB3_H200721.png",
+"Source": "dummy",
+"ServiceId": "dummy"
+}
+

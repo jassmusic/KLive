@@ -1,0 +1,57 @@
+{
+"Id": kbs|11,
+"Name": "1TV",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|12,
+"Name": "2TV",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|14,
+"Name": "KBS WORLD",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|81,
+"Name": "KBS24",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|N91,
+"Name": "KBS24",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|N92,
+"Name": "KBSN 조이",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|N94,
+"Name": "KBSN W",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+},
+{
+"Id": kbs|N96,
+"Name": "KBSN KIDS",
+"Icon_url": "https://w.namu.la/s/ef3230890fee797cb6a45b4df51759994048cd7b14b8387c775c1583e05cb80073ba6bd5c49adb7076dd2de211a27be4b9d294672757ba60adba13b9dbba0026cb69e2d7448ef8c0d32f51ac4d93271600885ccc097026bf5e54b7e4d07c7208",
+"Source": "dummy",
+"ServiceId": "dummy"
+}
+
