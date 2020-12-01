@@ -449,6 +449,30 @@
 "ServiceId": "H07"
 },
 {
+"WAVVE Name": "AsiaM",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/C5102_Img_20201127184619.jpg",
+"Source": "WAVVE",
+"ServiceId": "C5102"
+},
+{
+"WAVVE Name": "시네마천국",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/H05_Img_20201127184140.jpg",
+"Source": "WAVVE",
+"ServiceId": "H05"
+},
+{
+"WAVVE Name": "인디필름",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2601_Img_20201127183455.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2601"
+},
+{
+"WAVVE Name": "THE MOVIE",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2501_Img_20201127183840.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2501"
+},
+{
 "WAVVE Name": "ANIBOX",
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/C4401.jpg",
 "Source": "WAVVE",
