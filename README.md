@@ -9,7 +9,7 @@
                 kbs : Channels 8
                 sbs : Channels 12
 
-* xml addr (updated 2020-12-04)
+* xml addr (updated 2020-12-05)
 
   - [WAVVE/videoportal]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
