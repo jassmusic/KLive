@@ -1,6 +1,6 @@
 # KLive for SJVA
 
-* 20.12.06 기준 Channels List
+* 20.12.26 기준 Channels List
 
               WAVVE : Channels 117
               TVING : Channels 35
