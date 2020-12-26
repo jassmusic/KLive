@@ -35,12 +35,6 @@
 "ServiceId": "E07"
 },
 {
-"WAVVE Name": "자이언트 펭TV",
-"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/E18_Img_20200722153017.jpg",
-"Source": "WAVVE",
-"ServiceId": "E18"
-},
-{
 "WAVVE Name": "MBN",
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/C2401_Img_20191125101746.jpg",
 "Source": "WAVVE",
@@ -69,6 +63,12 @@
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/C2101.jpg",
 "Source": "WAVVE",
 "ServiceId": "C2101"
+},
+{
+"WAVVE Name": "SBS CNBC",
+"Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/S06.jpg",
+"Source": "WAVVE",
+"ServiceId": "S06"
 },
 {
 "WAVVE Name": "한국경제TV",
@@ -153,6 +153,12 @@
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/C5602_Img_20191230135745.jpg",
 "Source": "WAVVE",
 "ServiceId": "C5602"
+},
+{
+"WAVVE Name": "K SHOPPING",
+"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/F1401_Img_20201209152726.jpg",
+"Source": "WAVVE",
+"ServiceId": "F1401"
 },
 {
 "WAVVE Name": "KBS 1박 2일",
@@ -299,6 +305,18 @@
 "ServiceId": "S03"
 },
 {
+"WAVVE Name": "SBS Fil",
+"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/S22_Img_20201130235004.jpg",
+"Source": "WAVVE",
+"ServiceId": "S22"
+},
+{
+"WAVVE Name": "SBS MTV",
+"Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/S09.jpg",
+"Source": "WAVVE",
+"ServiceId": "S09"
+},
+{
 "WAVVE Name": "TV동물농장",
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/S15-1.jpg",
 "Source": "WAVVE",
@@ -333,6 +351,18 @@
 "Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/S20_Img_20200103142932.jpg",
 "Source": "WAVVE",
 "ServiceId": "S20"
+},
+{
+"WAVVE Name": "일요일이 좋다",
+"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/S23_Img_20201222172744.jpg",
+"Source": "WAVVE",
+"ServiceId": "S23"
+},
+{
+"WAVVE Name": "K팝스타",
+"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/S24_Img_20201222173221.jpg",
+"Source": "WAVVE",
+"ServiceId": "S24"
 },
 {
 "WAVVE Name": "MBN 플러스",
@@ -449,16 +479,16 @@
 "ServiceId": "H07"
 },
 {
-"WAVVE Name": "AsiaM",
-"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/C5102_Img_20201127184619.jpg",
-"Source": "WAVVE",
-"ServiceId": "C5102"
-},
-{
 "WAVVE Name": "시네마천국",
 "Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/H05_Img_20201127184140.jpg",
 "Source": "WAVVE",
 "ServiceId": "H05"
+},
+{
+"WAVVE Name": "AsiaM",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/C5102_Img_20201127184619.jpg",
+"Source": "WAVVE",
+"ServiceId": "C5102"
 },
 {
 "WAVVE Name": "인디필름",
@@ -497,6 +527,12 @@
 "ServiceId": "D01"
 },
 {
+"WAVVE Name": "SBS Nick",
+"Icon_url": "https://img.pooq.co.kr/BMS/Channelimage30/image/S10.jpg",
+"Source": "WAVVE",
+"ServiceId": "S10"
+},
+{
 "WAVVE Name": "EBS 키즈",
 "Icon_url": "http://img.pooq.co.kr/BMS/Channelimage30/image/E05.jpg",
 "Source": "WAVVE",
@@ -509,6 +545,12 @@
 "ServiceId": "D02"
 },
 {
+"WAVVE Name": "자이언트 펭TV",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/E18_Img_20200722153017.jpg",
+"Source": "WAVVE",
+"ServiceId": "E18"
+},
+{
 "WAVVE Name": "브라보키즈",
 "Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/C6802_Img_20200826082858.jpg",
 "Source": "WAVVE",
@@ -519,6 +561,12 @@
 "Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F1301_Img_20200911111756.jpg",
 "Source": "WAVVE",
 "ServiceId": "F1301"
+},
+{
+"WAVVE Name": "SBS Golf",
+"Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/S05_Img_20201209150312.jpg",
+"Source": "WAVVE",
+"ServiceId": "S05"
 },
 {
 "WAVVE Name": "BTN불교TV",

@@ -1,20 +1,20 @@
 # KLive for SJVA
 
-* 20.12.01 기준 Channels List
+* 20.12.06 기준 Channels List
 
-              WAVVE : Channels 109
+              WAVVE : Channels 117
               TVING : Channels 35
         videoportal : Channels 42
            Baseball : Channels 8
                 kbs : Channels 8
                 sbs : Channels 12
 
-* xml addr (updated 2020-12-25)
+* xml addr (updated 2020-12-26)
 
-  - [WAVVE/videoportal]
+  - [WAVVE/TVING/videoportal]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
 
-  - [TVING]
+  - [TVING-all]
     https://raw.githubusercontent.com/jassmusic/KLive/master/tving.xml
 
 
