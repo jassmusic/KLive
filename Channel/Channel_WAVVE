@@ -563,6 +563,18 @@
 "ServiceId": "F1301"
 },
 {
+"WAVVE Name": "뽀로로TV",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2302_Img_20210113141445.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2302"
+},
+{
+"WAVVE Name": "타요TV",
+"Icon_url": "http://img.wavve.com/BMS/Channelimage30/image/F2303_Img_20210113185717.jpg",
+"Source": "WAVVE",
+"ServiceId": "F2303"
+},
+{
 "WAVVE Name": "SBS Golf",
 "Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/S05_Img_20201209150312.jpg",
 "Source": "WAVVE",
