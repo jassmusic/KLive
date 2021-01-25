@@ -1,13 +1,13 @@
 {
 "Id": 172,
-"Name": "EBS PLUS1",
+"Name": "EBS+1",
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_820.png",
 "Source": "KT",
 "ServiceId": "972"
 },
 {
 "Id": 173,
-"Name": "EBS PLUS2",
+"Name": "EBS+2",
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_821.png",
 "Source": "KT",
 "ServiceId": "971"

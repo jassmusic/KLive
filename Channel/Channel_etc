@@ -53,4 +53,11 @@
 "Icon_url": "https://img.wavve.com/BMS/Channelimage30/image/F2501_Img_20201127183840.jpg",
 "Source": "KT",
 "ServiceId": "104"
+},
+{
+"Id": 214,
+"Name": "tbsTV",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_420.png",
+"Source": "KT",
+"ServiceId": "214"
 }
