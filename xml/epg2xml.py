@@ -18,7 +18,7 @@ from xml.sax.saxutils import escape as _escape, unescape
 #
 # default variables
 #
-__version__ = '1.5.1'
+__version__ = '1.5.2-DEV'
 today = date.today()
 ua = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'
 req_timeout = 15
@@ -174,7 +174,7 @@ def GetEPGFromKT(ChannelInfos):
         dump_channels('KT', all_channels)
         all_services = [x['ServiceId'] for x in all_channels]
     except Exception as e:
-        log.error('체널 목록을 가져오지 못했습니다: %s', str(e))
+        log.error('채널 목록을 가져오지 못했습니다: %s', str(e))
         all_services = [x[3] for x in ChannelInfos]
 
     for ChannelInfo in ChannelInfos:
@@ -296,7 +296,7 @@ def GetEPGFromSK(ChannelInfos):
         dump_channels('SK', all_channels)
         all_services = [x['ServiceId'] for x in all_channels]
     except Exception as e:
-        log.error('체널 목록을 가져오지 못했습니다: %s', str(e))
+        log.error('채널 목록을 가져오지 못했습니다: %s', str(e))
         all_services = [x[3] for x in ChannelInfos]
 
     # remove unavailable channels in advance
@@ -366,7 +366,7 @@ def GetEPGFromSKB(ChannelInfos):
         dump_channels('SKB', all_channels)
         all_services = [x['ServiceId'] for x in all_channels]
     except Exception as e:
-        log.error('체널 목록을 가져오지 못했습니다: %s', str(e))
+        log.error('채널 목록을 가져오지 못했습니다: %s', str(e))
         all_services = [x[3] for x in ChannelInfos]
 
     for ChannelInfo in ChannelInfos:
@@ -797,7 +797,7 @@ def GetEPGFromTVING(reqChannels):
             get_from = 'movie' if sch['movie'] else 'program'
             img_code = 'CAIM2100' if sch['movie'] else 'CAIP0900'
 
-            rating = gcode[sch[get_from]['grade_code']]
+            rating = gcode[sch[get_from]['grade_code']] if sch[get_from]['grade_code'] else 0
 
             programName = sch[get_from]['name']['ko']
             subprogramName = sch[get_from]['name']['en'] if sch[get_from]['name']['en'] else ''
