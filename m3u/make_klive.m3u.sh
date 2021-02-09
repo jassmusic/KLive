@@ -171,6 +171,11 @@ else
 		printf '\r    %s : Channels %s .... done\n' "${CHANNEL_ID}" "${LINE_CNT}"
 		# tmp 삭제
 		rm -rf ${CHANNEL_DIR}/tmpId ${CHANNEL_DIR}/tmpName ${CHANNEL_DIR}/tmpurl ${CHANNEL_DIR}/tmpgroup
+		# modify
+		sed -i 's@url.m3u8?m=url\&s=tving\&i=C04601@url.mpd?m=url\&s=tving\&i=C04601@' "${TARGET_DIR}/${M3U_NAME}"
+		sed -i 's@url.m3u8?m=url\&s=tving\&i=C05661@url.mpd?m=url\&s=tving\&i=C05661@' "${TARGET_DIR}/${M3U_NAME}"
+		sed -i 's@url.m3u8?m=url\&s=tving\&i=C07381@url.mpd?m=url\&s=tving\&i=C07381@' "${TARGET_DIR}/${M3U_NAME}"
+		sed -i 's@url.m3u8?m=url\&s=tving\&i=C07382@url.mpd?m=url\&s=tving\&i=C07382@' "${TARGET_DIR}/${M3U_NAME}"
 	else
 		printf '    %s : No list\n' "${CHANEL_ID}"
 	fi
@@ -669,10 +674,5 @@ END
 	fi
 	
 	printf '    Total %s Channels\n' "${CHNO}"
-	# modify
-	sed -i 's@url.m3u8?m=url&s=tving&i=C04601@url.mpd?m=url&s=tving&i=C04601@' "${TARGET_DIR}/${M3U_NAME}"
-	sed -i 's@url.m3u8?m=url&s=tving&i=C05661@url.mpd?m=url&s=tving&i=C05661@' "${TARGET_DIR}/${M3U_NAME}"
-	sed -i 's@url.m3u8?m=url&s=tving&i=C07381@url.mpd?m=url&s=tving&i=C07381@' "${TARGET_DIR}/${M3U_NAME}"
-	sed -i 's@url.m3u8?m=url&s=tving&i=C07382@url.mpd?m=url&s=tving&i=C07382@' "${TARGET_DIR}/${M3U_NAME}"
 	echo "Finish!"
 fi
