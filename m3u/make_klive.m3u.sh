@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #CHANNEL_DIR=`pwd`
 CHANNEL_DIR="./KLive/Channel"
