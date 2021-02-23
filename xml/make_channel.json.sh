@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 WAVVE_name="Channel_WAVVE"
 TVING_name="Channel_TVING"
 #everyon_name="Channel_everyon"
