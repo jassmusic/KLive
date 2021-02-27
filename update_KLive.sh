@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/sh
 
 cur=`pwd`
 cd ./KLive
