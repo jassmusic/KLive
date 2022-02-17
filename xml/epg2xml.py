@@ -818,7 +818,7 @@ def GetEPGFromTVING(reqChannels):
             rating = gcode[sch[get_from]['grade_code']] if sch[get_from]['grade_code'] else 0
 
             programName = sch[get_from]['name']['ko']
-            subprogramName = sch[get_from]['name']['en'] if sch[get_from]['name']['en'] else ''
+            subprogramName = '' #sch[get_from]['name']['en'] if sch[get_from]['name']['en'] else ''
 
             category = sch[get_from]['category1_name']['ko'] if sch[get_from]['category1_name']['ko'] else ''
             actors = ','.join(sch[get_from]['actor'])
