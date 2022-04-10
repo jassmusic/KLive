@@ -2,7 +2,7 @@
 WAVVE_name="Channel_WAVVE"
 TVING_name="Channel_TVING"
 #everyon_name="Channel_everyon"
-videoportal_name="Channel_videoportal"
+KT_name="Channel_KT"
 etc_name="Channel_etc"
 total=0
 
@@ -64,18 +64,18 @@ else
 fi
 END
 
-if [ -f ${dir}/${videoportal_name} ]; then
+if [ -f ${dir}/${KT_name} ]; then
     if [ ${flag} == 1 ]; then
         echo "," >> ${dir}/${name}
     fi
-    cat ${dir}/${videoportal_name} >> ${dir}/${name}
+    cat ${dir}/${KT_name} >> ${dir}/${name}
     flag=1
-    cnt=`grep -o Source ${dir}/${videoportal_name} | wc -w`
-    printf '   videoportal : Channels %s\n' "${cnt}"
+    cnt=`grep -o Source ${dir}/${KT_name} | wc -w`
+    printf '   KT : Channels %s\n' "${cnt}"
     total=`expr ${total} + ${cnt}`
 else
     flag=0
-    printf '   videoportal : No list\n'
+    printf '   KT : No list\n'
 fi
 
 if [ -f ${dir}/${etc_name} ]; then

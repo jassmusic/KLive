@@ -1,13 +1,12 @@
 # KLive for SJVA
 
-* 21.01.18 기준 Channels List
+* 22.04.10 기준 Channels List
 
-              WAVVE : Channels 119
-              TVING : Channels 35
-        videoportal : Channels 42
-           Baseball : Channels 8
-                kbs : Channels 8
-                sbs : Channels 12
+              [ Total 241 Channels ]
+              WAVVE : Channels 150
+              TVING : Channels 37
+                 KT : Channels 42
+                etc : Channels 12
 
 * xml addr (updated 2022-04-10)
 

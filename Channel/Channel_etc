@@ -60,4 +60,25 @@
 "Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_420.png",
 "Source": "KT",
 "ServiceId": "214"
+},
+{
+"Id": 215,
+"Name": "JTBC Golf",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_127.png",
+"Source": "KT",
+"ServiceId": "56"
+},
+{
+"Id": 216,
+"Name": "JTBC GOLF&SPORTS",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_436.png",
+"Source": "KT",
+"ServiceId": "61"
+},
+{
+"Id": 217,
+"Name": "CH.DIA",
+"Icon_url": "http://mapp.btvplus.co.kr/data/btvplus/admobd/channelLogo/nsepg_180.png",
+"Source": "KT",
+"ServiceId": "72"
 }
