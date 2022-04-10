@@ -1,211 +1,36 @@
-{
-"TVING Name": "중화TV",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00544.png",
-"Source": "TVING",
-"ServiceId": "C00544"
-},
-{
-"TVING Name": "tvN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00551.png",
-"Source": "TVING",
-"ServiceId": "C00551"
-},
-{
-"TVING Name": "Olive",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00575.png",
-"Source": "TVING",
-"ServiceId": "C00575"
-},
-{
-"TVING Name": "Mnet",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00579.png",
-"Source": "TVING",
-"ServiceId": "C00579"
-},
-{
-"TVING Name": "TV CHOSUN 2",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00585.png",
-"Source": "TVING",
-"ServiceId": "C00585"
-},
-{
-"TVING Name": "JTBC Golf",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00588.png",
-"Source": "TVING",
-"ServiceId": "C00588"
-},
-{
-"TVING Name": "OGN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00590.png",
-"Source": "TVING",
-"ServiceId": "C00590"
-},
-{
-"TVING Name": "YTN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00593.png",
-"Source": "TVING",
-"ServiceId": "C00593"
-},
-{
-"TVING Name": "LIFETIME",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00611.png",
-"Source": "TVING",
-"ServiceId": "C00611"
-},
-{
-"TVING Name": "MBN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00708.png",
-"Source": "TVING",
-"ServiceId": "C00708"
-},
-{
-"TVING Name": "JTBC GOLF&SPORTS",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00805.png",
-"Source": "TVING",
-"ServiceId": "C00805"
-},
-{
-"TVING Name": "YTN Life",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01101.png",
-"Source": "TVING",
-"ServiceId": "C01101"
-},
-{
-"TVING Name": "XtvN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01141.png",
-"Source": "TVING",
-"ServiceId": "C01141"
-},
-{
-"TVING Name": "ONSTYLE",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01142.png",
-"Source": "TVING",
-"ServiceId": "C01142"
-},
-{
-"TVING Name": "O tvN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01143.png",
-"Source": "TVING",
-"ServiceId": "C01143"
-},
-{
-"TVING Name": "TV CHOSUN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01581.png",
-"Source": "TVING",
-"ServiceId": "C01581"
-},
-{
-"TVING Name": "JTBC",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01582.png",
-"Source": "TVING",
-"ServiceId": "C01582"
-},
-{
-"TVING Name": "채널A",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01583.png",
-"Source": "TVING",
-"ServiceId": "C01583"
-},
-{
-"TVING Name": "연합뉴스TV",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01723.png",
-"Source": "TVING",
-"ServiceId": "C01723"
-},
-{
-"TVING Name": "OCN Movies",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04601.png",
-"Source": "TVING",
-"ServiceId": "C04601"
-},
-{
-"TVING Name": "디즈니채널",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C05661.png",
-"Source": "TVING",
-"ServiceId": "C05661"
-},
-{
-"TVING Name": "투니버스",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C06941.png",
-"Source": "TVING",
-"ServiceId": "C06941"
-},
-{
-"TVING Name": "OCN",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png",
-"Source": "TVING",
-"ServiceId": "C07381"
-},
-{
-"TVING Name": "OCN Thrills",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png",
-"Source": "TVING",
-"ServiceId": "C07382"
-},
-{
-"TVING Name": "CH.DIA",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15152.png",
-"Source": "TVING",
-"ServiceId": "C15152"
-},
-{
-"TVING Name": "YTN사이언스",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15347.png",
-"Source": "TVING",
-"ServiceId": "C15347"
-},
-{
-"TVING Name": "JTBC2",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15741.png",
-"Source": "TVING",
-"ServiceId": "C15741"
-},
-{
-"TVING Name": "SBS CNBC",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15846.png",
-"Source": "TVING",
-"ServiceId": "C15846"
-},
-{
-"TVING Name": "채널A플러스",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17141.png",
-"Source": "TVING",
-"ServiceId": "C17141"
-},
-{
-"TVING Name": "MBN Plus",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17142.png",
-"Source": "TVING",
-"ServiceId": "C17142"
-},
-{
-"TVING Name": "히스토리",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17341.png",
-"Source": "TVING",
-"ServiceId": "C17341"
-},
-{
-"TVING Name": "JTBC4",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C22041.png",
-"Source": "TVING",
-"ServiceId": "C22041"
-},
-{
-"TVING Name": "Nickelodeon",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43241.png",
-"Source": "TVING",
-"ServiceId": "C43241"
-},
-{
-"TVING Name": "SBS MTV",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43242.png",
-"Source": "TVING",
-"ServiceId": "C43242"
-},
-{
-"TVING Name": "SBS F!L",
-"Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43341.png",
-"Source": "TVING",
-"ServiceId": "C43341"
-}
-
+{ "TVING Name": "tvN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00551.png", "Source": "TVING", "ServiceId": "C00551" },
+{ "TVING Name": "JTBC", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01582.png", "Source": "TVING", "ServiceId": "C01582" },
+{ "TVING Name": "Mnet", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00579.png", "Source": "TVING", "ServiceId": "C00579" },
+{ "TVING Name": "tvN DRAMA", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01143.png", "Source": "TVING", "ServiceId": "C01143" },
+{ "TVING Name": "Olive", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00575.png", "Source": "TVING", "ServiceId": "C00575" },
+{ "TVING Name": "OCN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07381.png", "Source": "TVING", "ServiceId": "C07381" },
+{ "TVING Name": "OCN Movies", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04601.png", "Source": "TVING", "ServiceId": "C04601" },
+{ "TVING Name": "OCN Thrills", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C07382.png", "Source": "TVING", "ServiceId": "C07382" },
+{ "TVING Name": "tvN SHOW", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01141.png", "Source": "TVING", "ServiceId": "C01141" },
+{ "TVING Name": "투니버스", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C06941.png", "Source": "TVING", "ServiceId": "C06941" },
+{ "TVING Name": "OGN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00590.png", "Source": "TVING", "ServiceId": "C00590" },
+{ "TVING Name": "중화TV", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00544.png", "Source": "TVING", "ServiceId": "C00544" },
+{ "TVING Name": "YTN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00593.png", "Source": "TVING", "ServiceId": "C00593" },
+{ "TVING Name": "MBN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00708.png", "Source": "TVING", "ServiceId": "C00708" },
+{ "TVING Name": "채널A", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01583.png", "Source": "TVING", "ServiceId": "C01583" },
+{ "TVING Name": "TV CHOSUN", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01581.png", "Source": "TVING", "ServiceId": "C01581" },
+{ "TVING Name": "연합뉴스TV", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01723.png", "Source": "TVING", "ServiceId": "C01723" },
+{ "TVING Name": "EBS1", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00772.png", "Source": "TVING", "ServiceId": "C00772" },
+{ "TVING Name": "SBS Biz", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15846.png", "Source": "TVING", "ServiceId": "C15846" },
+{ "TVING Name": "YTN사이언스", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15347.png", "Source": "TVING", "ServiceId": "C15347" },
+{ "TVING Name": "JTBC2", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C15741.png", "Source": "TVING", "ServiceId": "C15741" },
+{ "TVING Name": "TV CHOSUN 2", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00585.png", "Source": "TVING", "ServiceId": "C00585" },
+{ "TVING Name": "채널A플러스", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17141.png", "Source": "TVING", "ServiceId": "C17141" },
+{ "TVING Name": "MBN Plus", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17142.png", "Source": "TVING", "ServiceId": "C17142" },
+{ "TVING Name": "히스토리", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C17341.png", "Source": "TVING", "ServiceId": "C17341" },
+{ "TVING Name": "YTN2", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C01101.png", "Source": "TVING", "ServiceId": "C01101" },
+{ "TVING Name": "애니맥스", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C04042.png", "Source": "TVING", "ServiceId": "C04042" },
+{ "TVING Name": "ANIBOX", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C05441.png", "Source": "TVING", "ServiceId": "C05441" },
+{ "TVING Name": "LIFETIME", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C00611.png", "Source": "TVING", "ServiceId": "C00611" },
+{ "TVING Name": "국회방송(NATV)", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C51263.png", "Source": "TVING", "ServiceId": "C51263" },
+{ "TVING Name": "tvN STORY", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C51258.png", "Source": "TVING", "ServiceId": "C51258" },
+{ "TVING Name": "THE K-POP", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43342.png", "Source": "TVING", "ServiceId": "C43342" },
+{ "TVING Name": "SBS F!L", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43341.png", "Source": "TVING", "ServiceId": "C43341" },
+{ "TVING Name": "SBS MTV", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43242.png", "Source": "TVING", "ServiceId": "C43242" },
+{ "TVING Name": "Nickelodeon", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C43241.png", "Source": "TVING", "ServiceId": "C43241" },
+{ "TVING Name": "JTBC4", "Icon_url": "https://image.tving.com/upload/cms/caic/CAIC1600/C22041.png", "Source": "TVING", "ServiceId": "C22041" }
