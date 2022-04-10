@@ -10,7 +10,7 @@
 
 * xml addr (updated 2022-04-10)
 
-  - [WAVVE/TVING/videoportal]
+  - [WAVVE/TVING/KT/etc]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
 
   - [TVING-all]
