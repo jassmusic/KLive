@@ -8,7 +8,7 @@
                  KT : Channels 42
                 etc : Channels 12
 
-* xml addr (updated 2022-06-24)
+* xml addr (updated 2022-06-25)
 
   - [WAVVE/TVING/KT/etc]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
