@@ -1,4 +1,4 @@
-# KLive for SJVA
+# EPG to xml
 
 * xml addr (updated 2023-08-21)
 
