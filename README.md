@@ -5,7 +5,3 @@
   - [WAVVE/TVING/KT]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
 
-  - [TVING-all]
-    https://raw.githubusercontent.com/jassmusic/KLive/master/tving.xml
-
-
