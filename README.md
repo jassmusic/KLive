@@ -1,14 +1,6 @@
 # KLive for SJVA
 
-* 22.04.10 기준 Channels List
-
-              [ Total 241 Channels ]
-              WAVVE : Channels 150
-              TVING : Channels 37
-                 KT : Channels 42
-                etc : Channels 12
-
-* xml addr (updated 2023-08-19)
+* xml addr (updated 2023-08-21)
 
   - [WAVVE/TVING/KT/etc]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
