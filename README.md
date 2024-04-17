@@ -1,6 +1,6 @@
 # EPG to xml
 
-* xml addr (updated 2024-04-16)
+* xml addr (updated 2024-04-17)
 
   - [WAVVE/TVING/KT]
     https://raw.githubusercontent.com/jassmusic/KLive/master/klive.xml
